@@ -177,7 +177,7 @@ export default class AddPayments extends Component {
 
         <div className="form-group">
         <div class="col text-center">
-          <input type="submit" value="ADD Event" className="btn btn-primary" id="b1" />
+          <input type="submit" value="ADD Payment" className="btn btn-primary" id="b1" />
           </div>
           <button onClick={this.addPaymentDemo} className="btn btn-primary" id="Q1">RESET</button><br/><br/>
         </div><br/>

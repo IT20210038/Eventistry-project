@@ -17,7 +17,7 @@ router.route('/add').post((req, res) => {
   const DocumentNo = req.body.DocumentNo;
   const InvoiceNo = req.body.InvoiceNo;
   const BilltoName = req.body.BilltoName;
-  const PaymentDetails= Number(req.body.PaymentDetails);
+  const PaymentDetails= req.body.PaymentDetails;
   const date = Date.parse(req.body.date);
   const TotalAmount = Number(req.body.TotalAmount);
   

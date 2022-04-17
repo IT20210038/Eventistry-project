@@ -37,7 +37,7 @@ function ManageEvent() {
 
 
                 </ManageEventWrapper>
-            </ManageEventContainer>
+            </ManageEventContainer><br/><br/><br/>
 
 
         </div>

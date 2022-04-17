@@ -40,7 +40,7 @@ const EventsManage = props => (
         axios.delete('http://localhost:8070/events/' + id)
           .then(response => { console.log(response.data) });
     
-        alert("Are you sure you want to delete the following appointment from the system?")
+        alert("Are you sure you want to delete the following event from the system?")
         this.setState({
           EventsManage: this.state.EventsManage.filter(sml => sml._id !== id)
         })
@@ -74,7 +74,7 @@ const EventsManage = props => (
             {this.Eventlist()}
             </tbody>
         </table>
-        <br /><br /><br />
+        <br /><br /><br /><br/><br/><br/>
         </div>
       </div>
 
