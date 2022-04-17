@@ -1,0 +1,18 @@
+.manageStaff{
+    background: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-whitening-sunscreen-light-beauty-makeup-beauty-cosmetics-poster-banner-image_191658.jpg") no-repeat center center fixed;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.staffManagement{
+    display: flex;
+    height: 10vh;
+    color: #940d0d;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+/*p{
+    font-size: 30px;
+}*/

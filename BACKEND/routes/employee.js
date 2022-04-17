@@ -1,5 +1,6 @@
 const router = require('express').Router();
 let Employee = require('../models/employee.model');
+// const { findById } = require("../models/employee.model");
 
 router.route('/').get((req, res) => {
     Employee.find()
@@ -51,7 +52,7 @@ router.route('/:id').get((req, res) => {
         employee.email = req.body.email;
         employee.nic = req.body.nic;
         employee.mobileno = Number(req.body.mobileno);
-        employee.designation = req.body.disease;
+        employee.designation = req.body.designation;
         employee.date = Date.parse(req.body.date);
        
         employee.save()

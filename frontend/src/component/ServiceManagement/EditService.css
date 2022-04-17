@@ -5,8 +5,8 @@
     opacity: 0.8;
 }
 
-.EditEvent{
-    background-image: url('https://i0.wp.com/nkproductions.net/wp-content/uploads/2019/07/Gasparilla-Inn.jpg?resize=1080%2C720&ssl=1');
+.EditService{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vNjv61QImVIoBw3H0-kpM42wYdqHEoKN7Q&usqp=CAU');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,8 +19,8 @@
 	color:#000080;
 }
 
-#ba2 {
-    background-color: #f51f71; 
+#bkl2 {
+    background-color: #191970; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -28,20 +28,13 @@
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     height: 50px;
     width: 310px;
   }
 
-  .upform{
-    text-align: center;
-    font-weight:bold;
-    color:#000080;
-    font-size: 3rem;
-  }
-
-  #k2{
-    background-color: #d11010;
+  #u1{
+    background-color: #000080;
     border: none;
     color: white;
     position: relative;
@@ -57,3 +50,4 @@
     font-size: 16px;
     border-radius: 15px;
   }
+  

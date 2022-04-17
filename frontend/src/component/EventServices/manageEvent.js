@@ -16,7 +16,7 @@ function ManageEvent() {
                 <ManageEventH1>Select task to continue</ManageEventH1>
                 <ManageEventWrapper>
                     <ManageEventCard>
-                        <ManageEventH2>ADD NEW Event</ManageEventH2>
+                        <ManageEventH2>ADD NEW EVENT</ManageEventH2>
                         <ManageEventIcon src={Addap} />
                         <h5><NavLink to='/addEvent'>Continue</NavLink></h5>
 

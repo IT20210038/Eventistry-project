@@ -1,0 +1,55 @@
+#Addform{
+    max-width: 800px;
+    padding: 16px;
+    background-color: #DCDCDC; 
+    opacity: 0.8;
+  }
+  
+  h4{
+      font-family:Arial;
+      font-weight: bold;
+      color:#000080;
+      font-size: 2rem;
+      text-align: center;
+  }
+  
+  #A1 {
+      background-color: #8B008B; 
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      height: 50px;
+      width: 310px;
+  }
+  
+  .Addpaymentpg{
+        background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-weight: bold;
+  }
+
+  #Q1{
+    background-color: #000080;
+    border: none;
+    color: white;
+    position: relative;
+    left:200px;
+    right:150px;
+    height: 50px;
+    width: 310px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    margin:20px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+    
