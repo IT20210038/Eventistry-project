@@ -23,7 +23,7 @@ const paymentsSchema = new Schema({
         trim:true
     },
     PaymentDetails :{
-        type: Number,
+        type: String,
         maxlength:5,
         required: true
     },
