@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
-export const ManageEventContainer = styled.div`
+export const ManageStaffContainer = styled.div`
+  
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    background: transparent;
     @media screen and (max-width: 768px){
         height: 1100px;
     }
@@ -14,13 +15,13 @@ export const ManageEventContainer = styled.div`
         height: 1300px;
     }
 `
-export const ManageEventWrapper = styled.div`
-    max-width: 1125px;
+export const ManageStaffWrapper = styled.div`
+    max-width: 1000px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
-    grid-gap: 30px;
+    grid-gap: 70px;
     padding: 0 50px;
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
@@ -31,17 +32,16 @@ export const ManageEventWrapper = styled.div`
     }
 `
 
-export const ManageEventCard = styled.div`
-    background: #D3D3D3;
+export const ManageStaffCard = styled.div`
+    background: #2F4F4F;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-   
     max-height: 340px;
-    padding: 45px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0,2);
+    padding: 30px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0,2);
     transition: all 0.2s ease-in-out;
     &:hover{ 
         transform: scale(1.02);
@@ -50,25 +50,24 @@ export const ManageEventCard = styled.div`
     }
 `
 
-export const ManageEventIcon = styled.img`
+export const ManageStaffIcon = styled.img`
     height: 200px;
-    width: 250px;
+    width: 200px;
     margin-bottom: 10px;
 `
 
-export const ManageEventH1 = styled.h1`
+export const ManageStaffH1 = styled.h1`
     font-size: 2.5rem;
-    color: black;
+    color: #1e6262;
     margin-bottom: 32px;
-   
     @media screen and (max-width: 400px) {
         font-size: 2rem;
     }
 `
 
-export const ManageEventH2 = styled.h2`
-    font-size: 20px;
+export const ManageStaffH2 = styled.h2`
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
     margin-bottom: 10px;
-    color:#008080;
-    font-weight:bold;
 `

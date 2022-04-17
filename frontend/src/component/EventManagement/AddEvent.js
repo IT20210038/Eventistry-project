@@ -114,6 +114,24 @@ export default class AddEvent extends Component {
     alert("New Event added!");
     window.location = '/manageEvent';
   }}
+
+  addEventDemo = () => {
+    this.setState({
+      EventId: ""
+    });
+    this.setState({
+      EventType: ""
+    });
+    this.setState({
+      EventPlace: ""
+    });
+    this.setState({
+      NumberOfguests: ""
+    });
+    this.setState({
+      EventFee: ""
+    });
+  }
   
   
   
@@ -204,11 +222,12 @@ export default class AddEvent extends Component {
              
         </div><br/>
         <div style={{fontSize:16, color:"red"}}>{this.state.EventFeeError}</div>
-        <input type="reset" value="RESET" className="btn btn-primary" id="b1" />
+       
         <div className="form-group">
         <div class="col text-center">
-          <input type="submit" value="ADD Event" className="btn btn-primary" id="b1" />
-          </div>
+          <input type="submit" value="ADD EVENT" className="btn btn-primary" id="b1" />
+        </div>
+        <button onClick={this.addEventDemo} className="btn btn-primary" id="k1">RESET</button><br/><br/>
         </div><br/>
        
       </form>

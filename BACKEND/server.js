@@ -44,6 +44,9 @@ connection.once("open", () => {
  const paymentsRouter = require("./routes/PaymentsManage");
  app.use("/payments", paymentsRouter);
  
+ //const salaryRouter = require("./routes/salary");
+ //app.use("/salary", salaryRouter);
+
 
 //running port 8070
 app.listen(PORT, () => {

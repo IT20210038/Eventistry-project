@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ManageEventContainer = styled.div`
+export const ManageServiceContainer = styled.div`
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ export const ManageEventContainer = styled.div`
         height: 1300px;
     }
 `
-export const ManageEventWrapper = styled.div`
+export const ManageServiceWrapper = styled.div`
     max-width: 1125px;
     margin: 0 auto;
     display: grid;
@@ -31,8 +31,8 @@ export const ManageEventWrapper = styled.div`
     }
 `
 
-export const ManageEventCard = styled.div`
-    background: #D3D3D3;
+export const ManageServiceCard = styled.div`
+    background: #FAF0E6;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -50,13 +50,13 @@ export const ManageEventCard = styled.div`
     }
 `
 
-export const ManageEventIcon = styled.img`
+export const ManageServiceIcon = styled.img`
     height: 200px;
     width: 250px;
     margin-bottom: 10px;
 `
 
-export const ManageEventH1 = styled.h1`
+export const ManageServiceH1 = styled.h1`
     font-size: 2.5rem;
     color: black;
     margin-bottom: 32px;
@@ -66,9 +66,9 @@ export const ManageEventH1 = styled.h1`
     }
 `
 
-export const ManageEventH2 = styled.h2`
+export const ManageServiceH2 = styled.h2`
     font-size: 20px;
     margin-bottom: 10px;
-    color:#008080;
+    color:#006400;
     font-weight:bold;
 `

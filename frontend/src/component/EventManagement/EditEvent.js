@@ -90,6 +90,21 @@ alert("Event Updated!");
 window.location = '/viewEvent';
 }
 
+editEventDemo = () => {
+  this.setState({
+    EventType: ""
+  });
+  this.setState({
+    EventPlace: ""
+  });
+  this.setState({
+    NumberOfguests: ""
+  });
+  this.setState({
+    EventFee: ""
+  });
+}
+
 render() {
     return (
     <div className="EditEvent"><br/>
@@ -158,8 +173,9 @@ render() {
 
         <div className="form-group">
         <div class="col text-center">
-          <input type="submit" value="Update Event" className="btn btn-primary" id="ba2" />
+          <input type="submit" value="UPDATE EVENT" className="btn btn-primary" id="ba2" />
           </div>
+          <button onClick={this.editEventDemo} className="btn btn-primary" id="k2">RESET</button><br/><br/>
         </div><br/>
        
       </form>

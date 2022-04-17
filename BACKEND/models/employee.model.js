@@ -1,7 +1,6 @@
+const { text } = require('express');
 const mongoose = require('mongoose');
-
 const Schema = mongoose.Schema;
-
 const employeeSchema = new Schema({
 
   employeename: { 
@@ -44,6 +43,6 @@ const employeeSchema = new Schema({
     timestamps: true,
   });
 
-module.exports = mongoose.model('Employee', employeeSchema);
+const Employee = mongoose.model('Employee', employeeSchema);
 
-//module.exports = Employee;
+module.exports = Employee;

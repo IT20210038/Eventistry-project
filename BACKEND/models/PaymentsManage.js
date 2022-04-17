@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const eventsSchema = new Schema({
+const paymentsSchema = new Schema({
 
     DocumentNo :{
         type: String,
@@ -37,6 +37,6 @@ const eventsSchema = new Schema({
 },
  );
     
-    const PaymentsManage = mongoose.model("Payments",eventsSchema);
+    const PaymentsManage = mongoose.model("Payments",paymentsSchema);
     
     module.exports = PaymentsManage;

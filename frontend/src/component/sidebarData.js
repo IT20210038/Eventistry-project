@@ -19,19 +19,19 @@ export const SidebarData = [
     },
     {
         title: 'Employees',
-        path: '/manageChannel',
+        path: '/manageStaff',
         icon: <ImIcons.ImUsers />,
         cName: 'nav-text'
     },
     {
         title: 'Services',
-        path: '/manageStaff',
+        path: '/manageService',
         icon: <FaIcons.FaXRay />,
         cName: 'nav-text'
     },
     {
         title: 'Payments',
-        path: '/manageLab',
+        path: '/addPayments',
         icon: <AiIcons.AiOutlineDollarCircle />,
         cName: 'nav-text'
     },
