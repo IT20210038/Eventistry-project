@@ -6,6 +6,7 @@ import EditEvent from "./component/EventManagement/EditEvent";
 import ViewEvent from "./component/EventManagement/viewEvent";
 import EventReport from "./component/EventManagement/EventReport";
 import manageEvent from "./component/EventServices/manageEvent";
+import SearchEvent from "./component/EventManagement/SearchEvent";
 import Navbar from "./component/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./component/home";
@@ -46,6 +47,7 @@ function App() {
         <Route path="/viewEvent" component={ViewEvent} />
         <Route path='/EventReport' component={EventReport} />
         <Route path='/manageEvent' exact component={manageEvent} />
+        <Route path="/SearchEvent" component={SearchEvent} />
 
         
         <Route path="/addPayments" component={AddPayments} />
