@@ -118,7 +118,7 @@ th {
   .searchEventTitle{
 	font-size: 60px;
 	text-align: center;
-	color: black;
+	color: rgb(190, 23, 23);
 	margin: 0;
 	height: 60px;
 }
@@ -130,7 +130,7 @@ th {
 }*/
 
 .searchEventPage{
-	background: url("https://st.depositphotos.com/2101611/4693/i/600/depositphotos_46937137-stock-photo-hand-holding-businessman-icon-hr.jpg") no-repeat center center fixed;
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsT--dn0tZC70xhRxF23Q_V6dRBCFmfQv90g&usqp=CAU") no-repeat center center fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
