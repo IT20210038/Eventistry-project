@@ -113,3 +113,61 @@ th {
     color:#000080;
     font-size: 3rem;
   }
+
+
+  .searchEventTitle{
+	font-size: 60px;
+	text-align: center;
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+/*.toSearchEventPage{
+	color:rgb(210, 217, 224);
+	font-weight: bold;
+    font-size: 1.5rem;
+}*/
+
+.searchEventPage{
+	background: url("https://st.depositphotos.com/2101611/4693/i/600/depositphotos_46937137-stock-photo-hand-holding-businessman-icon-hr.jpg") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#searchEventForm{
+	max-width: 1000px;
+	height:700px;
+	padding: 16px;
+    background-color: transparent;
+    background: rgba(9, 12, 12, 0.5);
+    border-radius: 10px;
+    
+}
+
+.searchBar{
+	width:400px;
+    height: 40px;
+    border-radius: 15px;
+}
+.searchButton{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: auto;
+}
+
+.searchEvent{
+	font-size: 25px;
+    font-weight: bold;
+	color: rgb(231, 226, 228);
+	margin: 0;
+	height: 60px;
+}
+
+.search{
+    max-width: 1000px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(19, 14, 14);
+}
