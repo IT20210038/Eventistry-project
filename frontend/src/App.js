@@ -33,6 +33,8 @@ import SearchEmployee from "./component/StaffManagement/SearchEmployee";
 import manageStaff from "./component/StaffServices/manageStaff";
 import employeeReport from './component/StaffManagement/employeeReport';
 import CalcSalary from './component/StaffManagement/calcSalary';
+import ViewSalary from './component/StaffManagement/viewSalary';
+import searchSalary from './component/StaffManagement/searchSalary';
 
 
 function App() {
@@ -70,6 +72,8 @@ function App() {
         <Route path="/SearchEmployee" component={SearchEmployee} />
         <Route path='/employeeReport' component={employeeReport} />
         <Route path='/calcSalary' component={CalcSalary} />
+        <Route path='/viewSalary' component={ViewSalary} />
+        <Route path='/searchSalary' component={searchSalary} />
       </div>
     </Router>
   );

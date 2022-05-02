@@ -34,7 +34,7 @@ function  ManageStaff() {
 
                     </ManageStaffCard>
                 </ManageStaffWrapper>
-            </ManageStaffContainer>
+            </ManageStaffContainer><br/><br/><br/><br/>
 
 
         </div>
