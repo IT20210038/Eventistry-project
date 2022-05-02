@@ -51,6 +51,7 @@ export default class EditEmployee extends Component {
       employeename: e.target.value
     })
   }
+  
   onChangeGender(e) {
     this.setState({
       gender: e.target.value
