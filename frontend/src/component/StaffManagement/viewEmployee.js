@@ -82,7 +82,7 @@ const Employee = props => (
   
           <tbody>
             {this.EmployeeList()}
-            </tbody>
+          </tbody>
           </table><br/><br/><br/><br/>
        
           <div className="form-btn">
