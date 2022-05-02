@@ -604,6 +604,25 @@ th {
     display: grid;
 }  
 
+.viewAllSalaryBtn{
+	align-items: right;
+	border-radius: 20px;
+	background-color:rgb(4, 139, 121);
+	height:55px;
+	width:400px;
+	transition-duration: 0.4s;   
+}
+
+.toviewSalaryPage{
+	color:rgb(210, 217, 224);
+	font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.linkToViewSalary:hover {
+	background-color: rgb(104, 230, 209);    
+}
+
 .report-btn{
     width: 60%;
     padding: 10px;
@@ -660,8 +679,8 @@ th {
     margin: 0 auto;
     display: grid;
 	max-width: 1000px;
-	background-color:salmon;
-
+	background-color:rgb(169, 211, 181);
+    border-radius: 15px;
 
 }
 
