@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import './staff.css';
+import './employee.css';
 
 function SearchSalary() {
     const [search, setSearch] = useState('');

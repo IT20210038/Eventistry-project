@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Link, Redirect } from "react-router-dom";
 import DatePicker from "react-datepicker";
-// import './staff.css';
+import './employee.css';
 
 import "react-datepicker/dist/react-datepicker.css";
 import { number } from 'prop-types';

@@ -672,3 +672,36 @@ th {
 	width: 150px;
 	height: 35px;
 } */
+
+
+.searchStaffPage{
+	background: url("https://image.shutterstock.com/image-photo/healthcare-people-group-professional-doctor-260nw-1213711042.jpg") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#searchStaffForm{
+	max-width: 700px;
+	height:500px;
+	padding: 16px;
+	background-color:peachpuff;
+}
+
+.searchSalaryPage{
+	background: url("https://airvat.com/how-to-calculate-your-vat-refund-in-the-uk-thumb.dacfdafd.jpg") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#searchSalaryForm{
+	max-width: 700px;
+	height:500px;
+	padding: 16px;
+	background-color: peachpuff;
+}
+
+.searchBar{
+	width:400px;
+}

@@ -38,6 +38,9 @@ connection.once("open", () => {
  const employeeRouter = require('./routes/employee');
  app.use('/employee', employeeRouter);
 
+ const salaryRouter = require('./routes/salary');
+ app.use('/salary', salaryRouter);
+
  const servicesRouter = require("./routes/ServicesManage");
  app.use("/services", servicesRouter);
 
