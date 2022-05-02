@@ -60,6 +60,7 @@ const Employee = props => (
   
           <h2 className="addEmployeeTitle">ALL EMPLOYEE DETAILS</h2><br></br><br></br>
           <div className='container' id="EmployeeListForm">
+          
           <table id="table" className="container">
   
             <tr>
@@ -82,7 +83,7 @@ const Employee = props => (
           <tbody>
             {this.EmployeeList()}
             </tbody>
-        </table><br/><br/><br/><br/>
+          </table><br/><br/><br/><br/>
        
           <div className="form-btn">
               <button className="btn btn-primary" id="bdatabase"><Link className="toemployeeReportPage" to="/employeeReport" >GENERATE REPORT</Link></button><br/><br/>
