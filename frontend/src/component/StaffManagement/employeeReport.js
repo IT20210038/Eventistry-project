@@ -74,11 +74,14 @@ export default class pdfGenerator extends PureComponent {
                                 <th>Date</th>
                             </tr>
                         </thead>
+
                         <tbody>
                             {this.employeeDetailsList()}
                         </tbody>
+
                     </table>
                     <br />
+                    
                     <button className='report-btn' onClick={this.jsPdfGenerator}>GENERATE REPORT</button>
 
                 </div><br /><br /><br />
