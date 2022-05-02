@@ -31,8 +31,8 @@ function SearchBar() {
                 <br />
                 <input className="searchBar" type="text" placeholder="Search..." onChange={(e) => {
                     setSearch(e.target.value);
-                }} />
-                <br /><br />
+                }} /><br /><br />
+
                 <table className="table">
                     <thead className="thead-light">
                         <tr>
@@ -45,6 +45,7 @@ function SearchBar() {
                         </tr>
                     </thead>
                     </table>  
+
                     <tbody className="search">
                     <thead className="thead-light">
                         <tr>
@@ -57,8 +58,9 @@ function SearchBar() {
                                 <td>{val.mobileno}</td>
                                 <td>{val.designation}</td>
                             </div>
-                        })}
-                              </tr>
+                        })
+                        }
+                        </tr>
                     </thead>
                     </tbody>
                     
