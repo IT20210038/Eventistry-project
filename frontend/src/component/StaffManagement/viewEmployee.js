@@ -37,7 +37,7 @@ const Employee = props => (
       }
 
       deleteEmployee(id) {
-        axios.delete('http://localhost:5000/employee/' + id)
+        axios.delete('http://localhost:8070/employee/' + id)
           .then(response => { console.log(response.data) });
     
         alert("Are you sure you want to delete the following employee details from the system?")

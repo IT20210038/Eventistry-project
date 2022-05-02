@@ -88,7 +88,7 @@ export default class AddEmployee extends Component {
 
     console.log(employee);
 
-    axios.post('http://localhost:5000/employee/add', employee)
+    axios.post('http://localhost:8070/employee/add', employee)
       .then(res => console.log(res.data));
 
     alert("Successfull Add Employee Details")

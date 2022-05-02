@@ -8,7 +8,7 @@ function SearchSalary() {
     const [filteredData, setFilteredData] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/salary/')
+        axios.get('http://localhost:8070/salary/')
             .then((response) => {
                 setSalary(response.data);
             })
@@ -40,15 +40,15 @@ function SearchSalary() {
                     </thead>
                     <tbody>
                         {filteredData.map((val) => {
-                            return <div key={val.id}>
+                            return <div key={val.id}><b>
                                 <td>{val.date}</td>
                                 <td>{val.name}</td>
-                                <td>{val.totalSalary}</td>
+                                <td>{val.totalSalary}</td></b>
                             </div>
                         })}
                     </tbody>
                 </table>
-            </div>
+            </div><br/><br/><br/><br/><br/><br/><br/><br/>
         </div>
     );
 }
