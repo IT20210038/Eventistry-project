@@ -9,7 +9,7 @@ const Salary = props => (
         <td>{props.salary.name}</td>
         <td>{props.salary.basicSalary}</td>
         <td>{props.salary.otHours}</td>
-        <td>{props.salary.otPay}</td>
+        <td>{props.salary.otPay}</td> 
         <td>{props.salary.totalSalary}</td>
 
         <td>
@@ -28,7 +28,7 @@ export default class ViewSalary extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/salary/')
+        axios.get('http://localhost:8070/salary/')
             .then(response => {
                 this.setState({ salary: response.data })
             })
@@ -75,7 +75,7 @@ export default class ViewSalary extends Component {
                             {this.salaryDetailsList()}
                         </tbody>
                     </table>
-                </div>
+                </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </div>
         )
     }
