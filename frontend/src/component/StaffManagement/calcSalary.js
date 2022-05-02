@@ -79,7 +79,7 @@ export default class CalcSalary extends Component {
 
         console.log(salary);
 
-        axios.post('http://localhost:5000/salary/add', salary)
+        axios.post('http://localhost:8070/salary/add', salary)
             .then(res => console.log(res.data));
 
         alert("Salary Entry Added!");

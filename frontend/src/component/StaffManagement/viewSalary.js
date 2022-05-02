@@ -38,7 +38,7 @@ export default class ViewSalary extends Component {
     }
 
     deleteSalary(id) {
-        axios.delete('http://localhost:5000/salary/' + id)
+        axios.delete('http://localhost:8070/salary/' + id)
             .then(res => console.log(res.data));
 
         this.setState({
@@ -75,7 +75,7 @@ export default class ViewSalary extends Component {
                             {this.salaryDetailsList()}
                         </tbody>
                     </table>
-                </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </div>
         )
     }
