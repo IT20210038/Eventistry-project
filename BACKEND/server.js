@@ -49,7 +49,7 @@ connection.once("open", () => {
  
  //const salaryRouter = require("./routes/salary");
  //app.use("/salary", salaryRouter);
-
+ app.use("/users", require("./routes/auth"));
 
 //running port 8070
 app.listen(PORT, () => {

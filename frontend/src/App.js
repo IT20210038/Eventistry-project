@@ -10,6 +10,18 @@ import SearchEvent from "./component/EventManagement/SearchEvent";
 import Navbar from "./component/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./component/home";
+import Dashboard from "./component/Dashboard";
+import NavMain from "./component/layout/NavMain";
+import Landing from "./component/layout/Landing";
+import Login from "./component/auth/Login";
+import Register from "./component/auth/Register";
+import PrivateRoute from "./routing/PrivateRoute";
+import NotFound from "./component/NotFound";
+import setAuthToken from "./utils/setAuthToken";
+import store from "./store";
+import { loadUser } from "./actions/auth";
+import {Switch} from "react-router";
+import { useEffect } from 'react';
 
 //kasun
 import AddPayments from "./component/PaymentsManagement/AddPayments";
@@ -36,14 +48,29 @@ import CalcSalary from './component/StaffManagement/calcSalary';
 import ViewSalary from './component/StaffManagement/viewSalary';
 import searchSalary from './component/StaffManagement/searchSalary';
 
+if (localStorage.token) {
+  setAuthToken(localStorage.token);
+}
 
 function App() {
+  useEffect(() => {
+    store.dispatch(loadUser());
+  }, []);
   return (
-    <Router>
+      <>
+      <div className="App">
+      <Router>
+      <NavMain />
+
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/register" component={Register} />
+        <Route exact path="/login" component={Login} />
       <div>
       <Navbar/>
      <br/>
-        <Route exact path="/" component={Home} />
+      <PrivateRoute exact path="/dashboard" component={Dashboard} />
+        <Route path="/home" component={Home} />
         <Route path="/addEvent" component={AddEvent} />
         <Route path="/editEvent/:id" component={EditEvent} />
         <Route path="/viewEvent" component={ViewEvent} />
@@ -75,7 +102,10 @@ function App() {
         <Route path='/viewSalary' component={ViewSalary} />
         <Route path='/searchSalary' component={searchSalary} />
       </div>
+      </Switch>
     </Router>
+    </div>
+    </>
   );
 }
 
