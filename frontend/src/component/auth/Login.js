@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import { login } from "../../actions/auth";
 import Alert from "../layout/Alert";
 
+
 const Login = ({ login, isAuthenticated }) => {
 	const [formData, setFormData] = useState({
 		email: "",
@@ -29,12 +30,14 @@ const Login = ({ login, isAuthenticated }) => {
 
 	return (
 		<div className="login-form">
+        <div className="form-Login">
 			<h1 className="heading">Sign In</h1>
 			<p className="lead">
 				<i className="fas fa-user"></i> Sign Into Your Account
 			</p>
 			<Alert />
 			<br />
+           
 			<form className="form" onSubmit={(e) => onSubmit(e)}>
 				<div className="form-group">
 					<input
@@ -57,12 +60,16 @@ const Login = ({ login, isAuthenticated }) => {
 						required
 					/>
 				</div>
-				<input type="submit" className="btn" value="Login" />
+				<input type="submit" className="btn1" value="Login" />
 			</form>
+            <br/>
 			<p className="link">
 				Don't have an account? <Link to="/register">Sign Up</Link>
 			</p>
+            <br/><br/>
 		</div>
+        </div>
+        
 	);
 };
 

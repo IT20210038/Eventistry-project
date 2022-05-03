@@ -1,12 +1,14 @@
 import React from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-//import icon from "../img/user.png";
+import './home.css';
 
 const Dashboard = ({ auth: { user } }) => {
 	return (
+		<div className="form-dashboard">
 		<div style={{ marginTop: "5rem", textAlign: "center" }}>
 			<h1>Welcome, {user && user.name}</h1>
+		</div>
 		</div>
 	);
 };
