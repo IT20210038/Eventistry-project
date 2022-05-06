@@ -6,9 +6,11 @@ import './home.css';
 const Dashboard = ({ auth: { user } }) => {
 	return (
 		<div className="form-dashboard">
+			<br/><br/><br/>
 		<div style={{ marginTop: "5rem", textAlign: "center" }}>
-			<h1>Welcome, {user && user.name}</h1>
+			<h1>Welcome {user && user.name}</h1>
 		</div>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 		</div>
 	);
 };
