@@ -45,8 +45,8 @@
     border: none;
     color: white;
     position: relative;
-    left:200px;
-    right:150px;
+    left:140px;
+    right:130px;
     height: 50px;
     width: 310px;
     text-align: center;
@@ -75,3 +75,20 @@
     font-size: 16px;
     border-radius: 15px;
   }
+
+  .form-groupEvent{
+    width: 80%;
+    background: transparent;
+    padding: 10px;
+    margin: 0 auto;
+    display: grid;
+    max-width: 700px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.dropdown-content {
+  width: 90%;
+   position: relative;
+   
+ }
