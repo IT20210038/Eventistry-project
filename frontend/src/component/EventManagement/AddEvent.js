@@ -142,7 +142,7 @@ export default class AddEvent extends Component {
     <div className="AddEventpg"><br/>
       <form onSubmit={this.onSubmit} className="container" id="Addform">
       <h4 className='add'>ADD NEW EVENT</h4> 
-      <div className="form-group" > 
+      <div className="form-groupEvent" > 
           <label>Event Id: </label>
           <input type="text"
               required
@@ -156,8 +156,10 @@ export default class AddEvent extends Component {
               
     </div><br/>
     <div style={{fontSize:16, color:"red"}}>{this.state.EventIdError}</div>
-      <div className="form-group"> 
+      
+      <div className="form-groupEvent"> 
           <label>Event Type : <br /> </label>
+          <div class="dropdown-content">
           <select className="eventMan" value={this.state.EventType}
                     onChange={this.onChangeEventType}>
                     <option selected disabled value="">Select</option>
@@ -167,8 +169,8 @@ export default class AddEvent extends Component {
                     <option value="Engagement">Engagement</option>
                     <option value="Business party">Business party</option>
           </select>
-        </div><br/>
-        <div className="form-group"> 
+        </div></div><br/>
+        <div className="form-groupEvent"> 
           <label>Event Place : </label>
           <select className="eventMain" value={this.state.EventPlace}
                     onChange={this.onChangeEventPlace}>
@@ -184,7 +186,7 @@ export default class AddEvent extends Component {
                     <option value="Marriot,Weligama">Marriot,Weligama</option>
             </select>
         </div><br/>
-        <div className="form-group">
+        <div className="form-groupEvent">
           <label>Number Of Guests: </label>
           <input 
               type="text" 
@@ -198,7 +200,7 @@ export default class AddEvent extends Component {
           
         </div><br/>
         <div style={{fontSize:16, color:"red"}}>{this.state.NumberOfguestsError}</div>
-        <div className="form-group">
+        <div className="form-groupEvent">
           <label>date: </label>
           <div>
             <DatePicker
@@ -208,7 +210,7 @@ export default class AddEvent extends Component {
             />
           </div>
         </div><br/>
-        <div className="form-group"> 
+        <div className="form-groupEvent"> 
           <label>Event Fee: </label>
           <input  type="text"
               required
@@ -223,7 +225,7 @@ export default class AddEvent extends Component {
         </div><br/>
         <div style={{fontSize:16, color:"red"}}>{this.state.EventFeeError}</div>
        
-        <div className="form-group">
+        <div className="form-groupEvent">
         <div class="col text-center">
           <input type="submit" value="ADD EVENT" className="btn btn-primary" id="b1" />
         </div>

@@ -110,10 +110,12 @@ render() {
     <div className="EditEvent"><br/>
       <form onSubmit={this.onSubmit} className="container" id="Editform">
       <h4 className='upform'>UPDATE EVENT</h4> 
-      <div className="form-group"> 
-          <label>Event Type: </label>
+      <div className="form-groupEvent"> 
+
+          <label>Event Type:</label>
+          <div class="dropdown-content">
           <select className="eventMan" value={this.state.EventType}
-                    onChange={this.onChangeEventType}>
+           onChange={this.onChangeEventType}>
                     <option selected disabled value="">Select</option>
                     <option value="Wedding">Wedding</option>
                     <option value="Birthday Party">Birthday Party</option>
@@ -121,8 +123,8 @@ render() {
                     <option value="Engagement">Engagement</option>
                     <option value="Business party">Business party</option>
           </select>
-        </div><br/>
-        <div className="form-group"> 
+          </div><br/>
+        
           <label>Event Place: </label>
           <select className="eventMain" value={this.state.EventPlace}
                     onChange={this.onChangeEventPlace}>
@@ -137,8 +139,8 @@ render() {
                     <option value="98-acress Resort">98-acress Resort</option>
                     <option value="Marriot,Weligama">Marriot,Weligama</option>
           </select>
-        </div><br/>
-        <div className="form-group">
+        <br/>
+        
           <label>Number Of Guests: </label>
           <input 
               type="text" 
@@ -148,8 +150,8 @@ render() {
               value={this.state.NumberOfguests}
               onChange={this.onChangeNumberOfguests}
           />
-        </div><br/>
-        <div className="form-group">
+        <br/>
+        
           <label>date: </label>
           <div>
             <DatePicker
@@ -158,8 +160,8 @@ render() {
               onChange={this.onChangedate}
             />
           </div>
-        </div><br/>
-        <div className="form-group"> 
+       <br/>
+         
           <label>Event Fee: </label>
           <input  type="text"
               required
@@ -169,15 +171,15 @@ render() {
               value={this.state.EventFee}
               onChange={this.onChangeEventFee}
               />
-        </div><br/>
+        <br/>
 
-        <div className="form-group">
+        
         <div class="col text-center">
           <input type="submit" value="UPDATE EVENT" className="btn btn-primary" id="ba2" />
           </div>
           <button onClick={this.editEventDemo} className="btn btn-primary" id="k2">RESET</button><br/><br/>
-        </div><br/>
-       
+        <br/>
+       </div>
       </form>
     </div>
        )
