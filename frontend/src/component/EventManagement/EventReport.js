@@ -69,7 +69,7 @@ export default class pdfGenerator extends PureComponent {
                     {this.Eventlist()}
                     </tbody>
                 </table>
-                <br /><br /><br/><br/><br/>
+                <br /><br /><br/><br/>
                 <div class="col text-center">
                     <button onClick={this.jsPDFGenerator} id="k3">GENERATE REPORT</button>
                 </div>
