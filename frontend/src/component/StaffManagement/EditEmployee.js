@@ -51,6 +51,7 @@ export default class EditEmployee extends Component {
       employeename: e.target.value
     })
   }
+  
   onChangeGender(e) {
     this.setState({
       gender: e.target.value
@@ -103,7 +104,7 @@ export default class EditEmployee extends Component {
 
     console.log(employee);
 
-    axios.post('http://localhost:5000/employee/update/' +  this.props.match.params.id, employee)
+    axios.post('http://localhost:8070/employee/update/' +  this.props.match.params.id, employee)
       .then(res => console.log(res.data));
 
     alert("Updated Employee Details")    

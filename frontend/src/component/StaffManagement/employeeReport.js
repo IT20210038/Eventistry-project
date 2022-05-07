@@ -27,7 +27,7 @@ export default class pdfGenerator extends PureComponent {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/employee/')
+        axios.get('http://localhost:8070/employee/')
             .then(response => {
                 this.setState({ employee: response.data })
             })
@@ -74,11 +74,14 @@ export default class pdfGenerator extends PureComponent {
                                 <th>Date</th>
                             </tr>
                         </thead>
+
                         <tbody>
                             {this.employeeDetailsList()}
                         </tbody>
+
                     </table>
                     <br />
+
                     <button className='report-btn' onClick={this.jsPdfGenerator}>GENERATE REPORT</button>
 
                 </div><br /><br /><br />

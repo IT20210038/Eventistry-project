@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Link, Redirect } from "react-router-dom";
 import DatePicker from "react-datepicker";
-// import './staff.css';
+import './employee.css';
 
 import "react-datepicker/dist/react-datepicker.css";
 import { number } from 'prop-types';
@@ -59,7 +59,6 @@ export default class CalcSalary extends Component {
         });
     }
 
-
     onChangeTotalSalary(e) {
         this.setState({
             totalSalary: e.target.value
@@ -80,7 +79,7 @@ export default class CalcSalary extends Component {
 
         console.log(salary);
 
-        axios.post('http://localhost:5000/salary/add', salary)
+        axios.post('http://localhost:8070/salary/add', salary)
             .then(res => console.log(res.data));
 
         alert("Salary Entry Added!");
@@ -101,8 +100,6 @@ export default class CalcSalary extends Component {
             otPay: ""
         });
 
-
-
     }
 
 
@@ -112,8 +109,12 @@ export default class CalcSalary extends Component {
 
             <div className="calcSalaryPage">
 
-                <button className="viewAllSalaryBtn"><Link className="linkToViewSalary" to="/viewSalary">View All Salary Details</Link></button>
-                <button className="searchSalaryBtn"><Link className="linkToViewSalary" to="/searchSalary">Search Salary Details</Link></button>
+                <br/><br/>
+                <div className="searchButton">
+                    <button className="viewAllSalaryBtn"><Link className="toviewSalaryPage" to="/viewSalary">View All Salary Details</Link></button>&nbsp;
+                    <button className="searchEmployeeBtn"><Link className="toSearchEmployeePage" to="/searchSalary">Search Salary Details</Link></button>
+                </div><br/><br/>
+                
                 <div className="container" id="calcForm">
                     
                     <form onSubmit={this.onSubmit}>
@@ -172,6 +173,7 @@ export default class CalcSalary extends Component {
                                 onChange={this.onChangeOTHours}
                             />
                         </div>
+
                         <div className="form-group">
                             <label>OT Pay: </label>
                             <input
@@ -192,18 +194,15 @@ export default class CalcSalary extends Component {
                             />
                         </div>
                         <br />
+
                         <div className="form-group">
-                            <input type="submit" value="ADD TO DATABASE" className="btn btn-primary" onClick={this.getTotal} /><br />
+                            <input type="submit" value="ADD TO DATABASE" className="btn btn-primary" onClick={this.getTotal} id="badd" /><br />
                             <br />
-                            <button onClick={this.calcSalaryDemo} className="btn btn-primary" id="demoBtn2">RESET</button>
+                            <button onClick={this.calcSalaryDemo} className="btn btn-primary" id="breset">RESET</button>
                         </div>
+
                     </form>
                 </div>
-                <button onClick={this.calcSalaryDemo} className="calcSalaryDemo">Demo</button>
-
-
-
-
                 <br />
             </div>
 
