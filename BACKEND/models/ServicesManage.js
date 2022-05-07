@@ -16,8 +16,11 @@ const servicesSchema = new Schema({
         trim:true
     },
     phoneno: {
-        type : Number,
-        required: true
+        type: Number, 
+    required: true, 
+    maxlength:10, 
+    minlength:10, 
+    unique:true
      },
     fee :{
         type : Number
