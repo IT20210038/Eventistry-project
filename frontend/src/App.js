@@ -36,6 +36,7 @@ import EditService from "./component/ServiceManagement/EditService";
 import ViewServicet from "./component/ServiceManagement/viewService";
 import ServiceReport from "./component/ServiceManagement/ServiceReport";
 import manageService from "./component/Services/manageService";
+import SearchService from "./component/ServiceManagement/SearchService";
 
 //hashini
 import AddEmployee from "./component/StaffManagement/AddEmployee";
@@ -89,7 +90,7 @@ function App() {
         <Route path="/viewService" component={ViewServicet} />
         <Route path='/ServiceReport' component={ServiceReport} />
         <Route path='/manageService' exact component={manageService} />
-
+        <Route path="/SearchService" component={SearchService} />
 
         <Route path="/manageStaff" component={manageStaff} />
         <Route path="/addEmployee" component={AddEmployee} />
