@@ -16,7 +16,7 @@ import Landing from "./component/layout/Landing";
 import Login from "./component/auth/Login";
 import Register from "./component/auth/Register";
 import PrivateRoute from "./routing/PrivateRoute";
-import NotFound from "./component/NotFound";
+//import NotFound from "./component/NotFound";
 import setAuthToken from "./utils/setAuthToken";
 import store from "./store";
 import { loadUser } from "./actions/auth";
@@ -36,6 +36,7 @@ import EditService from "./component/ServiceManagement/EditService";
 import ViewServicet from "./component/ServiceManagement/viewService";
 import ServiceReport from "./component/ServiceManagement/ServiceReport";
 import manageService from "./component/Services/manageService";
+import SearchService from "./component/ServiceManagement/SearchService";
 
 //hashini
 import AddEmployee from "./component/StaffManagement/AddEmployee";
@@ -45,8 +46,6 @@ import SearchEmployee from "./component/StaffManagement/SearchEmployee";
 import manageStaff from "./component/StaffServices/manageStaff";
 import employeeReport from './component/StaffManagement/employeeReport';
 import CalcSalary from './component/StaffManagement/calcSalary';
-import ViewSalary from './component/StaffManagement/viewSalary';
-import searchSalary from './component/StaffManagement/searchSalary';
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
@@ -57,19 +56,20 @@ function App() {
     store.dispatch(loadUser());
   }, []);
   return (
-      <>
+    <>
       <div className="App">
-      <Router>
-      <NavMain />
+    <Router>
+    <NavMain />
 
-      <Switch>
-        <Route exact path="/" component={Landing} />
-        <Route exact path="/register" component={Register} />
-        <Route exact path="/login" component={Login} />
+    <Switch>
+      <Route exact path="/" component={Landing} />
+      <Route exact path="/register" component={Register} />
+      <Route exact path="/login" component={Login} />
+    
       <div>
       <Navbar/>
      <br/>
-      <PrivateRoute exact path="/dashboard" component={Dashboard} />
+     <PrivateRoute exact path="/dashboard" component={Dashboard} />
         <Route path="/home" component={Home} />
         <Route path="/addEvent" component={AddEvent} />
         <Route path="/editEvent/:id" component={EditEvent} />
@@ -90,7 +90,7 @@ function App() {
         <Route path="/viewService" component={ViewServicet} />
         <Route path='/ServiceReport' component={ServiceReport} />
         <Route path='/manageService' exact component={manageService} />
-
+        <Route path="/SearchService" component={SearchService} />
 
         <Route path="/manageStaff" component={manageStaff} />
         <Route path="/addEmployee" component={AddEmployee} />
@@ -99,8 +99,6 @@ function App() {
         <Route path="/SearchEmployee" component={SearchEmployee} />
         <Route path='/employeeReport' component={employeeReport} />
         <Route path='/calcSalary' component={CalcSalary} />
-        <Route path='/viewSalary' component={ViewSalary} />
-        <Route path='/searchSalary' component={searchSalary} />
       </div>
       </Switch>
     </Router>

@@ -27,7 +27,7 @@ const Employee = props => (
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/employee/')
+        axios.get('http://localhost:8070/employee/')
           .then(response => {
             this.setState({ employee: response.data })
           })

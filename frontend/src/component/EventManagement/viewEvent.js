@@ -55,8 +55,9 @@ const EventsManage = props => (
       render() {
         return (
           <div className="viewEventpg"><br/>
-           <div className='container'>
-            <button className="searchEventBtn"><Link className="toSearch" to="/searchEvent" >Search Event</Link></button>
+         <div className='searchButton'>
+            <button className="searchEventBtn"><Link className="toSearch" to="/searchEvent" >Search Event</Link></button></div>
+            <div className='container'>
             <h4 className="viewapp">Events</h4><br />
             <table className="table"  id="eventDetailsTable" >
               <thead className="thead-light">
