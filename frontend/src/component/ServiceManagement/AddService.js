@@ -109,19 +109,22 @@ export default class AddService extends Component {
         <div className="form-group">
           <label>Contact Number: </label>
           <input 
-              type="number" 
+              type="text" 
               required
               className="form-control"
               name="Dnumbere"
               placeholder="Enter Contact Number "
               value={this.state.phoneno}
+              pattern="[0-9]*"
+              maxLength="10"
+              minLength="10"
               onChange={this.onChangephoneno}
           />
           </div><br/>
         <div className="form-group"> 
           <label>Service Fee: </label>
           <input 
-             type="number"
+             type="text"
               required
               name="dfee"
               className="form-control"
