@@ -1,28 +1,3 @@
-<<<<<<< HEAD
-#searchform{
-    background-color:#ADD8E6;
-	padding:16px;
-    max-width: 800px;
-    opacity: 0.8;
-}
-
-.searchPayments{
-    background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v546batch3-mynt-34-badgewatercolor_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=89288ef4b47127f7f34a5998b50e4470');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-weight:bold;
-}
-
-.updateapp{
-    font-family:Sans-serif;
-	font-weight:bold;
-	color:#000080;
-}
-
-#bk2 {
-    background-color: #191970; 
-=======
 h2{
     text-align: center;
     font-weight:bold;
@@ -39,7 +14,6 @@ h2{
 
 #ba3 {
     background-color: #e08a08; 
->>>>>>> 2e969e660dd3c8db376aa6ec8a94a1e67092e29e
     border: none;
     color: white;
     padding: 15px 32px;
@@ -47,36 +21,6 @@ h2{
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
-<<<<<<< HEAD
-    font-size: 14px;
-  }
-
-  .upform{
-    text-align: center;
-    font-weight:bold;
-    color:#000080;
-    font-size: 3rem;
-  }
-
-  
-  #Q2{
-    background-color: #000080;
-    border: none;
-    color: white;
-    position: relative;
-    left:200px;
-    right:150px;
-    height: 50px;
-    width: 310px;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    margin:20px;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 15px;
-  }
-=======
     font-size: 16px;
 }
 
@@ -142,4 +86,3 @@ th {
     display: inline-block;
     font-size: 16px;
 }
->>>>>>> 2e969e660dd3c8db376aa6ec8a94a1e67092e29e
