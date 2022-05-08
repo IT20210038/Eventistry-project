@@ -9,7 +9,7 @@ function SearchBar() {
     const [filteredData, setFilteredData] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8074/Payments/')
+        axios.get('http://localhost:8070/Payments/')
             .then((response) => {
                 setPayments(response.data);
             })

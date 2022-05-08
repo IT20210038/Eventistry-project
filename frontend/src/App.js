@@ -10,18 +10,6 @@ import SearchEvent from "./component/EventManagement/SearchEvent";
 import Navbar from "./component/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./component/home";
-import Dashboard from "./component/Dashboard";
-import NavMain from "./component/layout/NavMain";
-import Landing from "./component/layout/Landing";
-import Login from "./component/auth/Login";
-import Register from "./component/auth/Register";
-import PrivateRoute from "./routing/PrivateRoute";
-//import NotFound from "./component/NotFound";
-import setAuthToken from "./utils/setAuthToken";
-import store from "./store";
-import { loadUser } from "./actions/auth";
-import {Switch} from "react-router";
-import { useEffect } from 'react';
 
 //kasun
 import AddPayments from "./component/PaymentsManagement/AddPayments";
@@ -29,6 +17,8 @@ import EditPayments from "./component/PaymentsManagement/EditPayments";
 import viewPayments from "./component/PaymentsManagement/viewPayments";
 import searchPayments from "./component/PaymentsManagement/searchPayments";
 import PaymentsReport from "./component/PaymentsManagement/PaymentsReport";
+import managePayments from "./component/PaymentsServices/managePayments";
+
 
 //kaveen
 import AddService from "./component/ServiceManagement/AddService";
@@ -36,7 +26,6 @@ import EditService from "./component/ServiceManagement/EditService";
 import ViewServicet from "./component/ServiceManagement/viewService";
 import ServiceReport from "./component/ServiceManagement/ServiceReport";
 import manageService from "./component/Services/manageService";
-import SearchService from "./component/ServiceManagement/SearchService";
 
 //hashini
 import AddEmployee from "./component/StaffManagement/AddEmployee";
@@ -47,30 +36,14 @@ import manageStaff from "./component/StaffServices/manageStaff";
 import employeeReport from './component/StaffManagement/employeeReport';
 import CalcSalary from './component/StaffManagement/calcSalary';
 
-if (localStorage.token) {
-  setAuthToken(localStorage.token);
-}
 
 function App() {
-  useEffect(() => {
-    store.dispatch(loadUser());
-  }, []);
   return (
-    <>
-      <div className="App">
     <Router>
-    <NavMain />
-
-    <Switch>
-      <Route exact path="/" component={Landing} />
-      <Route exact path="/register" component={Register} />
-      <Route exact path="/login" component={Login} />
-    
       <div>
       <Navbar/>
      <br/>
-     <PrivateRoute exact path="/dashboard" component={Dashboard} />
-        <Route path="/home" component={Home} />
+        <Route exact path="/" component={Home} />
         <Route path="/addEvent" component={AddEvent} />
         <Route path="/editEvent/:id" component={EditEvent} />
         <Route path="/viewEvent" component={ViewEvent} />
@@ -84,13 +57,15 @@ function App() {
         <Route path="/viewPayments" component={viewPayments} />
         <Route path="/searchPayments" component={searchPayments} />
         <Route path="/PaymentsReport" component={PaymentsReport} />
+        <Route path='/managePayments' exact component={managePayments} />
+       
 
         <Route path="/addService" component={AddService} />
         <Route path="/editService/:id" component={EditService} />
         <Route path="/viewService" component={ViewServicet} />
         <Route path='/ServiceReport' component={ServiceReport} />
         <Route path='/manageService' exact component={manageService} />
-        <Route path="/SearchService" component={SearchService} />
+
 
         <Route path="/manageStaff" component={manageStaff} />
         <Route path="/addEmployee" component={AddEmployee} />
@@ -100,10 +75,7 @@ function App() {
         <Route path='/employeeReport' component={employeeReport} />
         <Route path='/calcSalary' component={CalcSalary} />
       </div>
-      </Switch>
     </Router>
-    </div>
-    </>
   );
 }
 
