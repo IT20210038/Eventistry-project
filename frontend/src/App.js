@@ -51,9 +51,6 @@ import viewSalary from './component/StaffManagement/viewSalary';
 import SearchSalary from "./component/StaffManagement/searchSalary";
 
 
-
-
-
 if (localStorage.token) {
   setAuthToken(localStorage.token);
 }
