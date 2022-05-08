@@ -48,8 +48,8 @@ router.route('/update/:id').post((req, res) => {
     .then(ServicesManage => {
       ServicesManage.name = req.body.name;
       ServicesManage.type = req.body.type;
-      ServicesManage. phoneno= req.body.phoneno;
-      ServicesManage.fee = req.body.fee;
+      ServicesManage. phoneno= Number(req.body.phoneno);
+      ServicesManage.fee = Number(req.body.fee);
     
 
 
