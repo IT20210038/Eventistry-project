@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ManageEventContainer = styled.div`
+export const ManagePaymentsContainer = styled.div`
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ export const ManageEventContainer = styled.div`
         height: 1300px;
     }
 `
-export const ManageEventWrapper = styled.div`
+export const ManagePaymentsWrapper = styled.div`
     max-width: 1125px;
     margin: 0 auto;
     display: grid;
@@ -31,8 +31,8 @@ export const ManageEventWrapper = styled.div`
     }
 `
 
-export const ManageEventCard = styled.div`
-    background: #FFF0F5;
+export const ManagePaymentsCard = styled.div`
+    background: #D3D3D3;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -50,16 +50,15 @@ export const ManageEventCard = styled.div`
     }
 `
 
-export const ManageEventIcon = styled.img`
+export const ManagePaymentsIcon = styled.img`
     height: 200px;
     width: 250px;
     margin-bottom: 10px;
 `
 
-export const ManageEventH1 = styled.h1`
+export const ManagePaymentsH1 = styled.h1`
     font-size: 2.5rem;
     color: black;
-    font-weight: bold;
     margin-bottom: 32px;
    
     @media screen and (max-width: 400px) {
@@ -67,7 +66,7 @@ export const ManageEventH1 = styled.h1`
     }
 `
 
-export const ManageEventH2 = styled.h2`
+export const ManagePaymentsH2 = styled.h2`
     font-size: 20px;
     margin-bottom: 10px;
     color:#008080;

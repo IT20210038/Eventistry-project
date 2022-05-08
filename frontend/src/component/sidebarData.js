@@ -31,7 +31,7 @@ export const SidebarData = [
     },
     {
         title: 'Payments',
-        path: '/addPayments',
+        path: '/managePayments',
         icon: <AiIcons.AiOutlineDollarCircle />,
         cName: 'nav-text'
     },

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './viewPayments';
+import './Spayments.css';
 
 
 function SearchBar() {
@@ -9,7 +10,7 @@ function SearchBar() {
     const [filteredData, setFilteredData] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8074/Payments/')
+        axios.get('http://localhost:8070/Payments/')
             .then((response) => {
                 setPayments(response.data);
             })

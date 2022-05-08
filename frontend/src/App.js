@@ -29,6 +29,7 @@ import EditPayments from "./component/PaymentsManagement/EditPayments";
 import viewPayments from "./component/PaymentsManagement/viewPayments";
 import searchPayments from "./component/PaymentsManagement/searchPayments";
 import PaymentsReport from "./component/PaymentsManagement/PaymentsReport";
+import managePayments from "./component/PaymentsServices/managePayments";
 
 //kaveen
 import AddService from "./component/ServiceManagement/AddService";
@@ -46,6 +47,11 @@ import SearchEmployee from "./component/StaffManagement/SearchEmployee";
 import manageStaff from "./component/StaffServices/manageStaff";
 import employeeReport from './component/StaffManagement/employeeReport';
 import CalcSalary from './component/StaffManagement/calcSalary';
+import viewSalary from './component/StaffManagement/viewSalary';
+
+
+
+
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
@@ -84,6 +90,7 @@ function App() {
         <Route path="/viewPayments" component={viewPayments} />
         <Route path="/searchPayments" component={searchPayments} />
         <Route path="/PaymentsReport" component={PaymentsReport} />
+        <Route path='/managePayments' exact component={managePayments} />
 
         <Route path="/addService" component={AddService} />
         <Route path="/editService/:id" component={EditService} />
@@ -99,6 +106,7 @@ function App() {
         <Route path="/SearchEmployee" component={SearchEmployee} />
         <Route path='/employeeReport' component={employeeReport} />
         <Route path='/calcSalary' component={CalcSalary} />
+        <Route path='/viewSalary' component={viewSalary} />
       </div>
       </Switch>
     </Router>
