@@ -32,7 +32,7 @@ export const ManageEventWrapper = styled.div`
 `
 
 export const ManageEventCard = styled.div`
-    background: #D3D3D3;
+    background: #FFF0F5;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -59,6 +59,7 @@ export const ManageEventIcon = styled.img`
 export const ManageEventH1 = styled.h1`
     font-size: 2.5rem;
     color: black;
+    font-weight: bold;
     margin-bottom: 32px;
    
     @media screen and (max-width: 400px) {

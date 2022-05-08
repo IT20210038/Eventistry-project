@@ -65,7 +65,7 @@
 }
 
 .EditEmployee{
-    background: url("https://www.wellmo.com/wp-content/uploads/2020/03/kuva-uutiseen.jpg") no-repeat center center fixed;
+    background: url("https://www.adp.com/-/media/adp/blog/articles/featuredimages/e/m/employee-background-screening-for-new-hires_575964.jpg?rev=ccb633e8f90b4b35ba5d28105959459e&h=300&w=700&la=en&hash=0330A0FE13597AFC57AD3EA4F747645A") no-repeat center center fixed;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -723,4 +723,32 @@ th {
 
 .searchBar{
 	width:400px;
+}
+
+.viewSalaryPage{
+
+    background: url("https://us.123rf.com/450wm/karandaev/karandaev1611/karandaev161100434/65841837-office-leather-desk-table-with-calculator-and-pen-top-view-with-copy-space.jpg?ver=6") no-repeat center center fixed;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+}
+
+
+
+#viewSalaryForm{
+
+    max-width: 1240px;
+
+    background:rgb(54, 160, 149);
+
+    padding: 40px;
+
+    margin: 0 auto;
+
+    display: grid;
+
 }

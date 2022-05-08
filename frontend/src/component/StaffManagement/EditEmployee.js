@@ -29,7 +29,7 @@ export default class EditEmployee extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/employee/' + this.props.match.params.id)
+    axios.get('http://localhost:8070/employee/' + this.props.match.params.id)
       .then(response => {
         this.setState({
             employeename: response.data.employeename,

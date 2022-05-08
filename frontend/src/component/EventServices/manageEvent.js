@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './manageEvent.css';
 import viewapp from '../../Assets/Images/viewapp.jpg'
 import Addap from '../../Assets/Images/Addap.jpg';
-import ChReport from '../../Assets/Images/ChReport.png';
+import BhReport from '../../Assets/Images/BhReport.jpg';
 import { ManageEventContainer, ManageEventH1, ManageEventWrapper, ManageEventCard, ManageEventIcon, ManageEventH2 } from './manageEventElement'
 
 
@@ -30,7 +30,7 @@ function ManageEvent() {
 
                     <ManageEventCard>
                         <ManageEventH2>GENERATE REPORT</ManageEventH2>
-                        <ManageEventIcon src={ChReport} />
+                        <ManageEventIcon src={BhReport} />
                         <h5><NavLink to='/EventReport'>Continue</NavLink></h5>
 
                     </ManageEventCard>

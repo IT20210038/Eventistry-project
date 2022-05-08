@@ -116,7 +116,7 @@ render() {
           <label>Service Type: </label>
           <select className="serviceMan" value={this.state.type}
                     onChange={this.onChangetype}>
-                    <option selected disabled value="">Select</option>
+                     <option selected disabled value="">Select</option>
                     <option value="Transport">Transport</option>
                     <option value="Photography">Photography</option>
                     <option value="Locations Planning">Locations Planning</option>

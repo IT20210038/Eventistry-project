@@ -1,6 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+<<<<<<< HEAD
+import './managePayments.css';
+=======
 import './managePayment.css';
+>>>>>>> 2e969e660dd3c8db376aa6ec8a94a1e67092e29e
 import PaymentsIcon from '../../Assets/Images/PaymentsIcon.png'
 import Paymentslist from '../../Assets/Images/Paymentslist.jpg';
 import ChReport from '../../Assets/Images/ChReport.png';

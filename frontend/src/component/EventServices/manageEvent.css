@@ -1,12 +1,12 @@
 .manageEvent{
-    background-image: url('https://previews.123rf.com/images/funtap/funtap1904/funtap190400864/120982775-event-management-konzept-flussdiagramm-zur-ereignisverwaltung-themen-rund-um-das-eventmanagement-mix.jpg');
+    background-image: url('https://static.wixstatic.com/media/c1343f_42e7aceebedd400190a48c5fb077afa0~mv2.jpg/v1/crop/x_0,y_527,w_3000,h_948/fill/w_824,h_520,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/pexels-fauxels-3183197_edited.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .mangApp{
-    color: #00008B;
+    color: white;
     display: flex;
     height: 10vh;
     justify-content: center;

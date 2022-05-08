@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './viewPayments';
+import './Spayments.css';
 
 
 function SearchBar() {

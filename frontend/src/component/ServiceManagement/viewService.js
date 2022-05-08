@@ -53,11 +53,12 @@ const ServicesManage = props => (
       render() {
         return (
           <div className="viewServicepg"><br/>
-           <div className='container'>
+           <div className='container'> 
            <div className="searchBttn">
             <button className="searchServiceBtn" ><Link className="toSearchServicePage" to="/SearchService" >Search</Link></button></div><br /><br />
   
-            <h2 className="viewapp">Services</h2><br />
+         
+            <h2 className="addServiceTitle">Services</h2><br />
             <table className="table"  id="serviceDetailsTable" >
               <thead className="thead-light">
                 <tr>
