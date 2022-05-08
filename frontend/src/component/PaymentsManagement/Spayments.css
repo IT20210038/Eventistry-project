@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #searchform{
     background-color:#ADD8E6;
 	padding:16px;
@@ -21,6 +22,24 @@
 
 #bk2 {
     background-color: #191970; 
+=======
+h2{
+    text-align: center;
+    font-weight:bold;
+    color:#000080;
+    font-size: 3rem;
+}
+
+.viewapp{
+    text-align: center;
+    font-weight:bold;
+    color:#e4ad17;
+    font-size: 3rem;
+}
+
+#ba3 {
+    background-color: #e08a08; 
+>>>>>>> 2e969e660dd3c8db376aa6ec8a94a1e67092e29e
     border: none;
     color: white;
     padding: 15px 32px;
@@ -28,6 +47,7 @@
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
+<<<<<<< HEAD
     font-size: 14px;
   }
 
@@ -56,3 +76,70 @@
     font-size: 16px;
     border-radius: 15px;
   }
+=======
+    font-size: 16px;
+}
+
+
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+  
+table ,tr,td{
+    border: 1px solid #ddd;
+    text-align: left;
+}
+  
+td{
+    padding:15px;
+}
+  
+tr:nth-child(even)
+{
+   background-color: #FAEBD7;
+}
+   
+tr:nth-child(odd)
+{
+   background-color: #FFF8DC;
+}
+
+th:nth-child(odd){
+    background-color:#f2f2f2;
+}
+
+th:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: blueviolet;
+}
+
+.PaymentsList{
+    background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v960-ning-30.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=63dd5f402645ef52fb7dfb592aec765a');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}      
+
+.searchEventBtn{
+    background-color: #eccc3a; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+>>>>>>> 2e969e660dd3c8db376aa6ec8a94a1e67092e29e

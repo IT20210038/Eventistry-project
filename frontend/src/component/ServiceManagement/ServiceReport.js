@@ -51,7 +51,7 @@ export default class pdfGenerator extends PureComponent {
         return (
             <div className="viewServicepg"><br/>
             <div className='container'>
-             <h3 className="ServiceDetails">Services Details</h3><br />
+             <h3 className="ServiceDetails">Services Report</h3><br />
              <table className="table"  id="serviceDetailsTable" >
                <thead className="thead-light">
                         <tr>
