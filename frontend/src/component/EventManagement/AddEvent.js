@@ -216,7 +216,6 @@ export default class AddEvent extends Component {
               required
               name="dfee"
               className="form-control"
-              //pattern="[0-1000000]*"
               placeholder="Enter event fee"
               value={this.state.EventFee}
               onChange={this.onChangeEventFee}

@@ -115,13 +115,12 @@ render() {
       <div className="form-group"> 
           <label>Service Type: </label>
           <select className="serviceMan" value={this.state.type}
-                    onChange={this.onChangeEtype}>
-                    <option selected disabled value="">Select</option>
-                    <option value="Wedding">Wedding</option>
-                    <option value="Birthday Party">Birthday Party</option>
-                    <option value="Anniversary">Anniversary</option>
-                    <option value="Engagement">Engagement</option>
-                    <option value="Business party">Business party</option>
+                    onChange={this.onChangetype}>
+                     <option selected disabled value="">Select</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Photography">Photography</option>
+                    <option value="Locations Planning">Locations Planning</option>
+                    <option value="Event Packages">Event Packages</option>
           </select>
         </div><br/>
        
