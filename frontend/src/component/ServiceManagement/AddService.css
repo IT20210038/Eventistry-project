@@ -1,61 +1,60 @@
 #Addform{
-    max-width: 800px;
-    padding: 16px;
-    background-color: #f5f0f0; 
-    opacity: 0.8;
-  }
-  
-  h4{
-      font-family:Arial;
-      font-weight: bold;
-      color:#000080;
-      font-size: 2rem;
-      text-align: center;
-  }
-  
-  #bk1 {
-      background-color: yellow; 
-      border: none;
-      color: black;
-      padding: 12px 36px;
-      text-align: center;
-      font-weight: bold;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 18px;
-      height: 50px;
-    width: 310px;
-  }
-  
- 
-  
-  .AddServicepg{
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4iIMtiYdc3Vu8_wBmPkQoiLkUrUxgRqQeug&usqp=CAU');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-weight: bold;
-  }
-   
-  .serviceMan{
-      width:180px;
-  }
-  
-  #u1{
-    background-color: #000080;
+  max-width: 800px;
+  padding: 16px;
+  background-color: transparent; 
+  opacity: 0.8;
+}
+
+h4{
+    font-family:Arial;
+    font-weight: bold;
+    color:#000080;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#bk1 {
+    background-color: yellow; 
     border: none;
-    color: white;
-    position: relative;
-    left:200px;
-    right:150px;
-    height: 50px;
-    width: 310px;
+    color: black;
+    padding: 12px 36px;
     text-align: center;
     font-weight: bold;
     text-decoration: none;
-    margin:20px;
     display: inline-block;
-    font-size: 16px;
-    border-radius: 15px;
-  }
-  
+    font-size: 18px;
+    height: 50px;
+  width: 310px;
+}
+
+
+
+.AddServicepg{
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4iIMtiYdc3Vu8_wBmPkQoiLkUrUxgRqQeug&usqp=CAU');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-weight: bold;
+}
+ 
+.serviceMan{
+    width:180px;
+}
+
+#u1{
+  background-color: #1c04f1;
+  border: none;
+  color: white;
+  position: relative;
+  left:200px;
+  right:150px;
+  height: 50px;
+  width: 310px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  margin:20px;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+}
